@@ -26,7 +26,7 @@ export const columns = [
         name: "Department",
         selector: (row) => row.dep_name,
          width: "170px",
-         cell: (row) => <span className="uppercase">{row.dep_name}</span>
+         
     },
     {
         name: "DOB",

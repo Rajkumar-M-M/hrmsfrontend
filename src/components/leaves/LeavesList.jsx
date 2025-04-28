@@ -54,8 +54,8 @@ const LeavesList = () => {
         </div>
 
         {/* view */}
-        <table className='w-full  text-left my-4 text-white  bg-purple-700 rounded-md'>
-          <thead className='text-md uppercase'>
+        <table className='w-full  text-left my-4 bg-purple-700 rounded-md'>
+          <thead className='text-md uppercase text-white '>
             <tr>
               <th className='px-6 py-3'>S.No</th>
               <th className='px-6 py-3'>Leave Type</th>
