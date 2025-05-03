@@ -22,7 +22,8 @@ import LeaveBalance from './components/leaves/LeaveBalance';
 import LeaveCalender from './components/leaves/LeaveCalender';
 import HolidayCalender from './components/leaves/HolidayCalender';
 import LeaveBalanceDetail from './components/leaves/LeaveBalanceDetail'; // Import the Bar Chart page
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <BrowserRouter>
@@ -90,6 +91,8 @@ function App() {
           <Route path='/employee-dashboard/setting' element={<Setting />}></Route>
           </Route>
       </Routes>
+      {/* ⬇️ Add this once, outside Routes */}
+      <ToastContainer position="top-right" autoClose={4000} theme="colored" />
     </BrowserRouter>
   )
 }
